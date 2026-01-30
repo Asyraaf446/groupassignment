@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMÉA | Book a Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">LUMÉA.</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="team.html">Directors</a></li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="book.html" class="btn-contact active">Book Table</a></li>
+            <li><a href="contact.html" class="btn-contact">Contact</a></li>
+        </ul>
+        <div class="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div>
+    </nav>
+
+    <header class="page-header" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="hero-overlay"></div>
+        <h1>Table Reservation</h1>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-wrapper">
+                
+                <div class="contact-info">
+                    <h3>Select Your Table</h3>
+                    <p class="sub-text">Click on a green table to select it.</p>
+                    
+                    <div class="floor-plan-container">
+                        <div class="screen">CAFE ENTRANCE / COUNTER</div>
+                        
+                        <div class="floor-plan">
+                            <div class="table-seat available" data-id="T1">T1</div>
+                            <div class="table-seat reserved" data-id="T2">T2</div>
+                            <div class="table-seat available" data-id="T3">T3</div>
+                            <div class="table-seat available" data-id="T4">T4</div>
+                            <div class="table-seat available" data-id="T5">T5</div>
+                            <div class="table-seat available" data-id="T6">T6</div>
+                            <div class="table-seat reserved" data-id="T7">T7</div>
+                            <div class="table-seat available" data-id="T8">T8</div>
+                            <div class="table-seat available" data-id="T9">T9</div>
+                            <div class="table-seat available" data-id="T10">T10</div>
+                            <div class="table-seat available" data-id="T11">T11</div>
+                            <div class="table-seat available" data-id="T12">T12</div>
+                        </div>
+
+                        <div class="legend">
+                            <span><div class="dot" style="background: #2ecc71;"></div> Available</span>
+                            <span><div class="dot" style="background: #f1c40f;"></div> Reserved</span>
+                            <span><div class="dot" style="background: #3498db;"></div> Selected</span>
+                        </div>
+                    </div>
+
+                    <div class="selection-info">
+                        <strong>Selected Table: </strong> <span id="displayTable">None</span>
+                    </div>
+
+                </div>
+
+                <form class="contact-form">
+                    <h3>Confirm Details</h3>
+                    
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Your Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" required>
+                        <label>Phone Number</label>
+                    </div>
+                    
+                    <div style="display: flex; gap: 20px;">
+                        <div class="input-group" style="flex: 1;">
+                            <input type="date" required style="color-scheme: dark;">
+                        </div>
+                        <div class="input-group" style="flex: 1;">
+                            <input type="time" required style="color-scheme: dark;">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="selectedTableInput" required readonly style="cursor: not-allowed; color: var(--primary-color);">
+                        <label style="top: -20px; font-size: 0.8rem; color: var(--primary-color);">Table No.</label>
+                    </div>
+
+                    <button type="submit" class="btn-main">Confirm Booking</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            
+            <div class="footer-col">
+                <div class="logo" style="margin-bottom: 20px;">LUMÉA.</div>
+                <p>Redefining the coffee culture. Where corporate excellence meets artisanal brewing. Established in 2015.</p>
+                
+                <div class="footer-social-links">
+                    
+                    <a href="https://www.instagram.com/lumea_cafe/" target="_blank">
+                        <img src="image2/insta.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.tiktok.com/@lumea.cafe" target="_blank">
+                        <img src="image2/unnamed.png" alt="TikTok">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="book.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Board of Directors</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-map-marker-alt" style="color: #d4af37; margin-right: 10px;"></i> 22, Persiaran Kewajipan, 47664 Subang Jaya, Selangor</li>
+                    <li><i class="fas fa-phone" style="color: #d4af37; margin-right: 10px;"></i> +60 18-351 5869</li>
+                    <li><i class="fas fa-envelope" style="color: #d4af37; margin-right: 10px;"></i> lumeacafe@gmail.com</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 LUMÉA Coffee Corp. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
